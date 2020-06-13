@@ -12,7 +12,5 @@ public class Client {
         //这里调用需要传入具体的 adapter类
         phone.charging(new VoltageAdapter());
 
-
-
     }
 }
