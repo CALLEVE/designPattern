@@ -1,0 +1,9 @@
+
+>
+java:S11483"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ
+q
+java:S14880"[Immediately return this expression instead of assigning it to the temporary variable "str".(˜•õ
+R
+java:S1128"7Remove this unused import 'java.sql.PreparedStatement'.(òÄ™ƒÿÿÿÿÿ
+N	java:S106%"9Replace this use of System.out or System.err by a logger.(ºŞ¼ÿ
+N	java:S106/"9Replace this use of System.out or System.err by a logger.(Â©ª›

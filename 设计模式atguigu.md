@@ -298,9 +298,7 @@ com.company.pattern.singleton.Singleton@1b6d3586:460141958
 com.company.pattern.singleton.Singleton@1b6d3586:460141958
 ```
 
-![](E:\学习\JAVA\md文档\设计模式\images\饿汉式(静态变量).jpg)
-
-
+![](设计模式atguigu.assets/饿汉式(静态变量)-1592053427804.jpg)
 
 
 
@@ -351,7 +349,7 @@ instance:460141958
 instance1:460141958
 ```
 
-![](E:\学习\JAVA\md文档\设计模式\images\饿汉式(静态代码块).jpg)
+![](设计模式atguigu.assets/饿汉式(静态代码块).jpg)
 
 
 
@@ -398,7 +396,7 @@ class Singleton03 {
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\懒汉式(线程不安全).jpg)
+![](设计模式atguigu.assets/懒汉式(线程不安全).jpg)
 
 
 
@@ -441,7 +439,7 @@ public class SingletonTest04 {
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\懒汉式(线程安全).jpg)
+![](设计模式atguigu.assets/懒汉式(线程安全).jpg)
 
 
 
@@ -474,7 +472,7 @@ public class SingletonTest05 {
 
 ```
 
-![](E:\学习\JAVA\md文档\设计模式\images\懒汉式(线程安全，同步代码块).jpg)
+![](设计模式atguigu.assets/懒汉式(线程安全，同步代码块).jpg)
 
 
 
@@ -511,7 +509,7 @@ public class SingletonTest06 {
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\双重检查.jpg)
+![](设计模式atguigu.assets/双重检查.jpg)
 
 
 
@@ -542,9 +540,7 @@ public class SingletonTest07 {
 
 
 
-
-
-![](E:\学习\JAVA\md文档\设计模式\images\静态内部类.jpg)
+![](设计模式atguigu.assets/静态内部类.jpg)
 
 
 
@@ -588,7 +584,11 @@ instance1:460141958
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\单例总结.jpg)
+![](设计模式atguigu.assets/单例总结.jpg)
+
+
+
+
 
 
 
@@ -598,7 +598,7 @@ instance1:460141958
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\pizza简单工厂类图.png)
+![](设计模式atguigu.assets/pizza简单工厂类图.png)
 
 抽象父类 Pizza
 
@@ -783,9 +783,9 @@ print into type
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\传统模式1.jpg)
+![](设计模式atguigu.assets/传统模式1.jpg)
 
-![](E:\学习\JAVA\md文档\设计模式\images\传统模式2.jpg)
+![](设计模式atguigu.assets/传统模式2.jpg)
 
 
 
@@ -793,7 +793,7 @@ print into type
 
 以上类可复用
 
-![](E:\学习\JAVA\md文档\设计模式\images\简单工厂模式.jpg)
+![](设计模式atguigu.assets/简单工厂模式.jpg)
 
 
 
@@ -908,7 +908,7 @@ public class OrderPizza {
 
 实现代码如下：
 
-![](E:\学习\JAVA\md文档\设计模式\images\工厂方法1.PNG)
+![](设计模式atguigu.assets/工厂方法1.PNG)
 
 Pizza  (该类可以进一步提升到接口层次)
 
@@ -1009,7 +1009,9 @@ public class LDGreekPizza extends Pizza{
 
 
 
-<img src="E:\学习\JAVA\md文档\设计模式\images\工厂方法2.PNG"  />
+![](设计模式atguigu.assets/工厂方法2-1592053576077.PNG)
+
+
 
 OrderPizza
 
@@ -1123,11 +1125,11 @@ public class OrderTest {
 
 ##### 抽象工厂
 
-![](E:\学习\JAVA\md文档\设计模式\images\抽象工厂.png)
+![](设计模式atguigu.assets/抽象工厂.png)
 
 
 
-![image-20200530183026099](E:\学习\JAVA\md文档\设计模式\images\抽象工厂类图.png)
+![](设计模式atguigu.assets/抽象工厂类图-1592053630626.png)
 
 
 
@@ -1240,7 +1242,7 @@ public class OrderPizza {
 
 PS:在java中 Calendar 使用的就是简单工厂的模式
 
-![](E:\学习\JAVA\md文档\设计模式\images\工厂模式总结.png)
+![](设计模式atguigu.assets/工厂模式总结.png)
 
 
 
@@ -1248,7 +1250,7 @@ PS:在java中 Calendar 使用的就是简单工厂的模式
 
 ### （3）原型模式
 
-![](E:\学习\JAVA\md文档\设计模式\images\原型模式.png)
+![](设计模式atguigu.assets/原型模式.png)
 
 
 
@@ -1339,11 +1341,11 @@ Sheep{id=55, name='55', color='black'}1163157884
 
 浅复制和深复制
 
-![](E:\学习\JAVA\md文档\设计模式\images\浅复制和深复制.png)
+![](设计模式atguigu.assets/浅复制和深复制.png)
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\深复制.png)
+![](设计模式atguigu.assets/深复制.png)
 
 
 
@@ -1541,7 +1543,7 @@ deepProtoType2.name:宋江,deepProtoType2.DeepCloneableTarget:com.company.patter
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\原型模式总结.png)
+![](设计模式atguigu.assets/原型模式总结.png)
 
 
 
@@ -1565,7 +1567,7 @@ deepProtoType2.name:宋江,deepProtoType2.DeepCloneableTarget:com.company.patter
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\建造者模式1.png)
+![](设计模式atguigu.assets/建造者模式1.png)
 
 House :产品
 
@@ -1775,9 +1777,9 @@ public class Client {
 高楼的屋顶
 ```
 
-![](E:\学习\JAVA\md文档\设计模式\images\建造者模式总结.png)
+![](设计模式atguigu.assets/建造者模式总结.png)
 
-![](E:\学习\JAVA\md文档\设计模式\images\建造者模式总结2.png)
+![](设计模式atguigu.assets/建造者模式总结2.png)
 
 
 
@@ -1799,7 +1801,7 @@ public class Client {
 
 用户收到反馈结果，感觉只是和目标接口交互
 
-![](E:\学习\JAVA\md文档\设计模式\images\适配器模式图.png)
+![](设计模式atguigu.assets/适配器模式图.png)
 
 ##### 类适配器模式
 
@@ -1893,13 +1895,13 @@ public class Client {
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\类适配器模式总结.png)
+![](设计模式atguigu.assets/类适配器模式总结.png)
 
 
 
 ##### 对象适配器模式
 
-![](E:\学习\JAVA\md文档\设计模式\images\对象适配器介绍.png)
+![](设计模式atguigu.assets/对象适配器介绍.png)
 
 其他类保持一致，以下两个类稍作调整
 
@@ -1974,7 +1976,7 @@ public class Client {
 
 相对于类适配器迷失，对象适配器的一个特点就是解耦，在类适配器中，被适配类和适配器本身构成了一个父子的继承关系，而在对象适配器中，通过调整，将两者的关系定位为聚合的关系，通过构造函数来实上述对象的实例化，相对于类适配器这种方式更灵活。
 
-![](E:\学习\JAVA\md文档\设计模式\images\对象适配模式总结.png)
+![](设计模式atguigu.assets/对象适配模式总结.png)
 
 
 
@@ -1982,7 +1984,7 @@ public class Client {
 
 ##### 接口适配器模式
 
-![](E:\学习\JAVA\md文档\设计模式\images\接口适配器介绍.png)
+![](设计模式atguigu.assets/\接口适配器介绍.png)
 
 简单来说，就是存在一个高级接口，高级接口中存在很多方法，构建一个抽象类，实现该接口，并且每个方法中均提供一个默认实现（空方法），然后，定义一个具体的实现类，继承上述的父类，并且有选择的覆盖父类的某些方法来实现需求。
 
@@ -2063,17 +2065,17 @@ public class Client {
 
 相较于前两者，接口适配器的灵活度更高，不需要考虑聚合和继承的关系。
 
-![](E:\学习\JAVA\md文档\设计模式\images\适配器总结.png)
+![](设计模式atguigu.assets/适配器总结.png)
 
 
 
 ### （6）桥接模式
 
-![](E:\学习\JAVA\md文档\设计模式\images\桥接模式介绍.png)
+![](设计模式atguigu.assets/桥接模式介绍.png)
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\桥接模式类图.png)
+![](设计模式atguigu.assets/桥接模式类图.png)
 
 
 
@@ -2273,9 +2275,333 @@ HuaWei
 
 
 
-![](E:\学习\JAVA\md文档\设计模式\images\桥接模式总结.png)
+![](设计模式atguigu.assets/桥接模式总结.png)
 
-![](E:\学习\JAVA\md文档\设计模式\images\桥接模式实践0.png)
+![](设计模式atguigu.assets/桥接模式实践0.png)
+
+
+
+### （7）装饰者模式
+
+定义：在不改变原有对象的基础之上，将功能附加到对象上。提供了比继承更有弹性的替代方案（扩展原有对象功能）。
+
+使用场景：
+
+1. 扩展一个类的功能或者给一个类添加附加职责
+2. 给一个对象动态的添加功能，或动态撤销功能。
+
+优点
+
+1. 继承的有力补充，比继承灵活，不改变原有对象的情况下给一个对象扩展功能。（继承在扩展功能是静态的，必须在编译时就确定好，而使用装饰者可以在运行时决定，装饰者也建立在继承的基础之上的）
+2. 通过使用不同装饰类以及这些类的排列组合，可以实现不同的效果。
+3. 符合开闭原则
+
+缺点
+
+1. 会出现更多的代码，更多的类，增加程序的复杂性。
+
+2. 动态装饰时，多层装饰时会更复杂。（使用继承来拓展功能会增加类的数量，使用装饰者模式不会像继承那样增加那么多类的数量但是会增加对象的数量，当对象的数量增加到一定的级别时，无疑会大大增加我们代码调试的难度）。
+
+   
+
+![](设计模式atguigu.assets/装饰者模式类图.png)
+
+从上图中反馈得到的信息
+
+1.装饰者本身与被装饰者之间具有共性，双方在一定程度（属性等）上可以进行统一。
+
+2.该模式的重点是装饰者模式本身（Decorator），他与ConcreteComponent是平级关系。
+
+3.每个具体的装饰者有继承至Decorator，实现每个ConcreteDecoratorX的具体实现。
+
+实例：
+
+![](设计模式atguigu.assets/装饰者模式咖啡实例类图.png)
+
+
+
+以Beverage为例，认为是所有饮料共有的抽象父类，
+
+```java
+package com.company.pattern.decorator;
+
+import java.math.BigDecimal;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-13 22:02
+ * @description: 所有公共类(饮料)
+ **/
+public abstract class Beverage {
+
+    protected String description = "Unknown Beverage";
+
+    public String getDescription() {
+        return description;
+    }
+
+    //在实际的设计模式，更像是接口的设计规则，只定义方法名，具体的方法实现由继承他的子类来完成
+    //目的就是为例让子类继承并实现
+    protected abstract BigDecimal cost();
+
+}
+
+```
+
+第一类：咖啡类，直接继承上述的 Beverage，并自行扩展
+
+DarkRoast
+
+```java
+package com.company.pattern.decorator;
+
+import java.math.BigDecimal;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-13 22:08
+ * @description: 深焙咖啡类（一种具体的饮料）
+ **/
+public class DarkRoast extends Beverage {
+
+    //应用构造函数的特性
+    public DarkRoast() {
+        description = "DarkRoast";
+    }
+
+    @Override
+    protected BigDecimal cost() {
+        return new BigDecimal(10.00);
+    }
+}
+```
+
+Decaf
+
+```java
+package com.company.pattern.decorator;
+
+import java.math.BigDecimal;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-13 22:30
+ * @description: 低咖啡因咖啡类（一种具体的饮料）
+ **/
+public class Decaf extends Beverage{
+
+    public Decaf() {
+        description = "Decaf";
+    }
+
+    @Override
+    protected BigDecimal cost() {
+        return new BigDecimal("15.00");
+    }
+}
+```
+
+Espresso
+
+```java
+package com.company.pattern.decorator;
+
+import java.math.BigDecimal;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-13 22:32
+ * @description: 浓缩咖啡类（一种具体饮料）
+ **/
+public class Espresso extends Beverage  {
+
+    public Espresso() {
+        description = "Espresso";
+    }
+
+    @Override
+    protected BigDecimal cost() {
+        return new BigDecimal("20.00");
+    }
+}
+```
+
+
+
+第二类：装饰者，定义一个装饰者的父类，同样继承Beverage类
+
+CondimentDecorator
+
+```java
+package com.company.pattern.decorator;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-13 22:33
+ * @description: 调料装饰着抽象类（继承自饮料抽象类）
+ **/
+public abstract class CondimentDecorator extends Beverage {
+    //所有调料必须重新实现 getDescription，这个getDescription是针对调料（装饰者本身）而言的Description
+    //作为所有装饰者的顶尖父类，必须在父类中定义
+    public abstract String getDescription();
+
+}
+```
+
+MochaDecorator
+
+```java
+package com.company.pattern.decorator;
+
+import java.math.BigDecimal;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-13 22:43
+ * @description: 摩卡调料类（继承自CondimentDecorator）
+ **/
+public class MochaDecorator extends CondimentDecorator {
+
+    //此处是装饰者模式的核心
+    // 为了实现装饰者的特点，以及功能通过聚合的方式引入饮料的顶尖父类
+    Beverage beverage;
+
+    //通过利用构造函数
+    public MochaDecorator(Beverage beverage) {
+        this.beverage = beverage;
+    }
+
+    @Override
+    public String getDescription() {
+        return beverage.getDescription()+",Mocha";
+    }
+
+    @Override
+    protected BigDecimal cost() {
+        return new BigDecimal(1.00).add(beverage.cost());
+    }
+}
+```
+
+
+
+```java
+package com.company.pattern.decorator;
+
+import java.math.BigDecimal;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-13 22:54
+ * @description: 豆浆调料类（继承自CondimentDecorator
+ **/
+public class SoyDecorator extends CondimentDecorator {
+
+    Beverage beverage;
+
+    public SoyDecorator(Beverage beverage) {
+        this.beverage = beverage;
+    }
+
+    @Override
+    public String getDescription() {
+        return beverage.getDescription()+",Decorator";
+    }
+
+    @Override
+    protected BigDecimal cost() {
+        return new BigDecimal("2.00").add(beverage.cost());
+    }
+}
+
+```
+
+
+
+```java
+package com.company.pattern.decorator;
+
+import java.math.BigDecimal;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-13 22:58
+ * @description: 奶泡调料类（继承自CondimentDecorator
+ **/
+public class WhipDecorator extends CondimentDecorator{
+
+    Beverage beverage;
+
+    public WhipDecorator(Beverage beverage) {
+        this.beverage = beverage;
+    }
+
+    @Override
+    public String getDescription() {
+        return beverage.getDescription()+",Whip";
+    }
+
+    @Override
+    protected BigDecimal cost() {
+        return new BigDecimal("3.00").add(beverage.cost());
+    }
+}
+
+```
+
+
+
+StartbuzzCoffee
+
+```java
+package com.company.pattern.decorator;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-13 23:00
+ * @description: 咖啡店
+ **/
+public class StartbuzzCoffee {
+    public static void main(String[] args) {
+        Beverage beverage = new DarkRoast();
+        System.out.println(beverage.description+":"+beverage.cost());
+
+        //试试添加其他的东西
+        Beverage espresso = new Espresso();
+        //注意只是调整了引用，对象是实际存在的东西
+        //通过如下的方式，espresso的本质还是饮料
+        espresso = new WhipDecorator(espresso);
+        System.out.println(espresso.getDescription()+":"+espresso.cost());
+    }
+}
+
+```
+
+```java
+DarkRoast:10
+Espresso,Whip:23.00
+```
+
+整个装饰者模式中，其实重点是在于实体对象和装饰者身份的抽离和封装，抽离出两者的共性Beverage（均是饮料类型，且具有共同的方法），最终通过继承Beverage构建装饰者的抽象父类，并由向下的子类进一步继承并完善（实现各自装饰者的具体实现，即封装），而在装饰者模式的整合上，实际上是将Beverage通过聚合的方式 与装饰者进行关联，即每一个装饰者中都应该实现对Beverage的聚合，而在装饰者生效的过程中，实际产生效果的是Beverage的具体实现类。
+
+装饰者模式和桥接模式的异同点：
+
+
+
+
+
+
+
+
 
 
 

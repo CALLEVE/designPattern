@@ -2,35 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d8dbf3c-c0ea-4d20-8d82-9f491a6cf14d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/693e6d33c180dab9c57dc24b0ac28d317e34b4a3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/7130454e2d48de252d129bb9dc7ce2f45d5c9774" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/78466cc316d0e0a67f425f33301c6d6b24711255" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97a0c781a11b6f9e5061a19340d7eba4baba23e2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb494cadfaf8bf6d59533e605ac3eabdc7b5244a" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/description.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/project-template.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/decorator/Beverage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atguiguDesignPattrn.iml" beforeDir="false" afterPath="$PROJECT_DIR$/atguiguDesignPattrn.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/atguiguDesignPattrn/META-INF/atguiguDesignPattrn.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/atguiguDesignPattrn/com/company/pattern/bridge/case1/Computer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/atguiguDesignPattrn/com/company/pattern/bridge/case1/Computer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/pattern/adapter/classadapter/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/pattern/adapter/classadapter/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/atguiguDesignPattrn/com/company/pattern/adapter/classadapter/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/atguiguDesignPattrn/com/company/pattern/adapter/classadapter/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../测试.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../设计模式atguigu.md" beforeDir="false" afterPath="$PROJECT_DIR$/../设计模式atguigu.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1dG8AxPejLRL4G2EmMRP1zs36BX" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,8 +40,9 @@
     <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.Client (2)">
+  <component name="RunManager" selected="Application.StartbuzzCoffee">
     <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.pattern.adapter.interfaceadapter.Client" />
       <module name="atguiguDesignPattrn" />
@@ -84,8 +82,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="StartbuzzCoffee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.pattern.decorator.StartbuzzCoffee" />
+      <module name="atguiguDesignPattrn" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.pattern.decorator.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.StartbuzzCoffee" />
         <item itemvalue="Application.Client (2)" />
         <item itemvalue="Application.Client (1)" />
         <item itemvalue="Application.Client" />
@@ -116,6 +128,10 @@
       <updated>1592039929443</updated>
       <workItem from="1592039931807" duration="84000" />
       <workItem from="1592049946062" duration="224000" />
+      <workItem from="1592051149332" duration="1001000" />
+      <workItem from="1592056377639" duration="758000" />
+      <workItem from="1592057148537" duration="4547000" />
+      <workItem from="1592221651324" duration="3084000" />
     </task>
     <task id="LOCAL-00001" summary="提交测试">
       <created>1592050085237</created>
@@ -130,39 +146,85 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="1">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_TABS">
+      <set>
+        <option value="1" />
+      </set>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="提交测试" />
     <option name="LAST_COMMIT_MESSAGE" value="提交测试" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1617" y="334" key="#com.intellij.ide.util.MemberChooser" timestamp="1592060339581">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="1617" y="334" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1592060339581" />
     <state x="930" y="178" key="CommitChangelistDialog2" timestamp="1592050084307">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="930" y="178" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592050084307" />
-    <state width="1872" height="281" key="GridCell.Tab.0.bottom" timestamp="1592040016020">
+    <state width="1872" height="281" key="GridCell.Tab.0.bottom" timestamp="1592230282874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="281" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592040016020" />
-    <state width="1872" height="281" key="GridCell.Tab.0.center" timestamp="1592040016020">
+    <state width="1872" height="281" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592230282874" />
+    <state width="1872" height="281" key="GridCell.Tab.0.center" timestamp="1592230282874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="281" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592040016020" />
-    <state width="1872" height="281" key="GridCell.Tab.0.left" timestamp="1592040016020">
+    <state width="1872" height="281" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592230282874" />
+    <state width="1872" height="281" key="GridCell.Tab.0.left" timestamp="1592230282874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="281" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592040016020" />
-    <state width="1872" height="281" key="GridCell.Tab.0.right" timestamp="1592040016020">
+    <state width="1872" height="281" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592230282874" />
+    <state width="1872" height="281" key="GridCell.Tab.0.right" timestamp="1592230282874">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1872" height="281" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592040016020" />
+    <state width="1872" height="281" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592230282874" />
+    <state width="1872" height="346" key="GridCell.Tab.1.bottom" timestamp="1592062205435">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1872" height="346" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592062205435" />
+    <state width="1872" height="346" key="GridCell.Tab.1.center" timestamp="1592062205435">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1872" height="346" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592062205435" />
+    <state width="1872" height="346" key="GridCell.Tab.1.left" timestamp="1592062205435">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1872" height="346" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592062205435" />
+    <state width="1872" height="346" key="GridCell.Tab.1.right" timestamp="1592062205435">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="1872" height="346" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592062205435" />
+    <state x="841" y="167" key="SettingsEditor" timestamp="1592057135179">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="841" y="167" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592057135179" />
     <state x="932" y="258" key="Vcs.Push.Dialog.v2" timestamp="1592050088246">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="932" y="258" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592050088246" />
-    <state x="646" y="644" key="com.intellij.ide.util.TipDialog" timestamp="1592049946072">
+    <state x="1044" y="259" key="VcsDiffUtil.ChangesDialog" timestamp="1592051167010">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="646" y="644" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592049946072" />
+    <state x="1044" y="259" key="VcsDiffUtil.ChangesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592051167010" />
+    <state x="646" y="644" key="com.intellij.ide.util.TipDialog" timestamp="1592231909159">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="646" y="644" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592231909159" />
     <state x="1018" y="316" key="git4idea.merge.GitPullDialog" timestamp="1592050154497">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
