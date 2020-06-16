@@ -1805,7 +1805,7 @@ public class Client {
 
 ##### 类适配器模式
 
-Voltage220V：被适配类，即需要通过一定手段对该类进行整改
+Voltage220V：被适配类，即需要通过一定手段对该类进行整改。
 
 ```java
 package com.company.pattern.adapter.classadapter;
@@ -1826,7 +1826,7 @@ public class Voltage220V {
 }
 ```
 
-IVoltage5V：接口
+IVoltage5V：接口，其实就是适配器核心方法的定义，也就是具体实现中该接口找那个定义的方法会对被适配器类做出怎么样的调整。
 
 ```java
 package com.company.pattern.adapter.classadapter;
@@ -1836,7 +1836,7 @@ public interface IVoltage5V {
 }
 ```
 
-VoltageAdapter：实际发挥作用的适配器本身，该适配器
+VoltageAdapter：实际发挥作用的适配器本身，该适配器实现具体的方法，来完成对被适配器类的***适配***工作。
 
 ```java
 package com.company.pattern.adapter.classadapter;
@@ -1860,7 +1860,7 @@ public class VoltageAdapter  extends Voltage220V implements IVoltage5V{
 
 
 
-Phone：实际使用者，或者说是适配器模式的受益者
+Phone：实际使用者，或者说是适配器模式的受益者，在具体实现上一定程度上，利用了多态的模式。
 
 ```java
 public class Phone {
@@ -2593,7 +2593,57 @@ Espresso,Whip:23.00
 
 整个装饰者模式中，其实重点是在于实体对象和装饰者身份的抽离和封装，抽离出两者的共性Beverage（均是饮料类型，且具有共同的方法），最终通过继承Beverage构建装饰者的抽象父类，并由向下的子类进一步继承并完善（实现各自装饰者的具体实现，即封装），而在装饰者模式的整合上，实际上是将Beverage通过聚合的方式 与装饰者进行关联，即每一个装饰者中都应该实现对Beverage的聚合，而在装饰者生效的过程中，实际产生效果的是Beverage的具体实现类。
 
+
+
 装饰者模式和桥接模式的异同点：
+
+相同点：都是用到了聚合的思想，通过将想要的属性或者特点整合到制定的对象中，完成整个模式的设计
+
+不同点：
+
+装饰者模式中，是将具现化的实体物本身聚合到抽象类的实现中，例如将咖啡（Beverage）聚合到装饰者（WhipDecorator）中，并通过构造函数来建立两者之间的联系，并且整合过后在特定的方法中还需要实现Beverage实现类的具体方法。
+
+桥接模式中，通过定义一个高级接口（Brand），定义品牌具有的特性，并将Brand整合到所有具现化实现类（Laptop）的抽象父类（Computer）中，即在Computer中整合Brand，并在Computer的方法中实现Brand的方法，以便Computer的具体实现类，在实现父类方法的同时，自动实现抽象接口实现类中定义的方法。
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

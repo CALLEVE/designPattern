@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d8dbf3c-c0ea-4d20-8d82-9f491a6cf14d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/decorator/Beverage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/atguiguDesignPattrn/com/company/pattern/adapter/classadapter/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/atguiguDesignPattrn/com/company/pattern/adapter/classadapter/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../测试.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../设计模式atguigu.md" beforeDir="false" afterPath="$PROJECT_DIR$/../设计模式atguigu.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +127,7 @@
       <workItem from="1592056377639" duration="758000" />
       <workItem from="1592057148537" duration="4547000" />
       <workItem from="1592221651324" duration="3084000" />
+      <workItem from="1592231905988" duration="607000" />
     </task>
     <task id="LOCAL-00001" summary="提交测试">
       <created>1592050085237</created>
