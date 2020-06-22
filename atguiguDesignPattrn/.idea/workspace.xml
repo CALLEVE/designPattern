@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8cdca4b-ec13-41eb-a489-0e9b0b9b121d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +24,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -49,16 +49,43 @@
       <option name="presentableId" value="Default" />
       <updated>1592831300277</updated>
       <workItem from="1592831302381" duration="603000" />
+      <workItem from="1592835213774" duration="136000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="902" y="581" key="com.intellij.ide.util.TipDialog" timestamp="1592831302951">
+    <state x="641" y="275" key="CommitChangelistDialog2" timestamp="1592835316820">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="902" y="581" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592831302951" />
+    <state x="641" y="275" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592835316820" />
+    <state x="356" y="334" width="1732" height="845" key="DiffContextDialog" timestamp="1592835350437">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="356" y="334" width="1732" height="845" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592835350437" />
+    <state x="723" y="399" key="SettingsEditor" timestamp="1592835300135">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="723" y="399" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592835300135" />
+    <state x="902" y="581" key="com.intellij.ide.util.TipDialog" timestamp="1592835214051">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="902" y="581" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592835214051" />
+    <state x="970" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592835311969">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="970" y="652" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592835311969" />
   </component>
 </project>
