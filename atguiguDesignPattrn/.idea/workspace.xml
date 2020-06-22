@@ -1,8 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d8dbf3c-c0ea-4d20-8d82-9f491a6cf14d" name="Default Changelist" comment="">
+    <list default="true" id="b967c897-1057-4b65-8a94-2b5e1117a2fd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/composite/College.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/composite/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/composite/OrganizationComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/composite/University.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../组合模式.mdj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/0/d/0d9117b8f1b716d3bad3858a6623a92849cd34a6" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/3/33882201e3ba84c87f146535acfa5457a8250ac9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/3/4/34031d1c9e9ce885a35ae442da5fa26dc49bc9e3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/5/7/57c75314814b645acd2ccaa334132d2d9555ed09" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/6/9/693e6d33c180dab9c57dc24b0ac28d317e34b4a3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/1/7130454e2d48de252d129bb9dc7ce2f45d5c9774" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/8/78466cc316d0e0a67f425f33301c6d6b24711255" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/7/d/7d7e622946c00302692fe34d737c1d5995ec7040" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/2/92068add897b6fc639223d7e4d45b02c2525d421" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/9/7/97a0c781a11b6f9e5061a19340d7eba4baba23e2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/b/cb494cadfaf8bf6d59533e605ac3eabdc7b5244a" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/c/d/cdbb03a3b7fa081d8e916b28185f4f860d723219" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/5/d597da85fe36425d7e75b3df39e7395df1f02603" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/d/d/ddadc17ed710406f8addcc718b3d727b3b3155ea" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/e/c/ec4752feda54041b9444a5c7c0599ecde51a24a0" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/f/2/f260b0048f0b0ce215658c501128f5d0bc87a1b3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../设计模式atguigu.md" beforeDir="false" afterPath="$PROJECT_DIR$/../设计模式atguigu.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,9 +44,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1dG8AxPejLRL4G2EmMRP1zs36BX" />
+  <component name="ProjectId" id="1desN0iVqYTP54FLGuZAI3S4Dkp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="1" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
@@ -30,74 +55,15 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
-  </component>
-  <component name="RunManager" selected="Application.StartbuzzCoffee">
-    <configuration name="Client (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.pattern.adapter.interfaceadapter.Client" />
-      <module name="atguiguDesignPattrn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.pattern.adapter.interfaceadapter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.pattern.adapter.classadapter.Client" />
-      <module name="atguiguDesignPattrn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.pattern.adapter.classadapter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Client" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.pattern.adapter.objectadapter.Client" />
-      <module name="atguiguDesignPattrn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.pattern.adapter.objectadapter.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StartbuzzCoffee" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.pattern.decorator.StartbuzzCoffee" />
-      <module name="atguiguDesignPattrn" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.pattern.decorator.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.StartbuzzCoffee" />
-        <item itemvalue="Application.Client (2)" />
-        <item itemvalue="Application.Client (1)" />
-        <item itemvalue="Application.Client" />
-      </list>
-    </recent_temporary>
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -116,114 +82,33 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="7d8dbf3c-c0ea-4d20-8d82-9f491a6cf14d" name="Default Changelist" comment="" />
-      <created>1592039929443</created>
+      <changelist id="b967c897-1057-4b65-8a94-2b5e1117a2fd" name="Default Changelist" comment="" />
+      <created>1592796849434</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1592039929443</updated>
-      <workItem from="1592039931807" duration="84000" />
-      <workItem from="1592049946062" duration="224000" />
-      <workItem from="1592051149332" duration="1001000" />
-      <workItem from="1592056377639" duration="758000" />
-      <workItem from="1592057148537" duration="4547000" />
-      <workItem from="1592221651324" duration="3084000" />
-      <workItem from="1592231905988" duration="607000" />
+      <updated>1592796849434</updated>
+      <workItem from="1592796851839" duration="4553000" />
     </task>
-    <task id="LOCAL-00001" summary="提交测试">
-      <created>1592050085237</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1592050085237</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="1">
-          <value>
-            <State>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="OPEN_TABS">
-      <set>
-        <option value="1" />
-      </set>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="提交测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交测试" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1617" y="334" key="#com.intellij.ide.util.MemberChooser" timestamp="1592060339581">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="0" y="254" key="#com.intellij.ide.util.MemberChooser" timestamp="1592816404715">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1617" y="334" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400@0.0.2560.1400" timestamp="1592060339581" />
-    <state x="930" y="178" key="CommitChangelistDialog2" timestamp="1592050084307">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="0" y="254" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592816404715" />
+    <state x="61" y="69" width="1721" height="891" key="SettingsEditor" timestamp="1592816915705">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="930" y="178" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1592050084307" />
-    <state width="1872" height="281" key="GridCell.Tab.0.bottom" timestamp="1592230282874">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="61" y="69" width="1721" height="891" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592816915705" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1592796875500">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1872" height="281" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592230282874" />
-    <state width="1872" height="281" key="GridCell.Tab.0.center" timestamp="1592230282874">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1872" height="281" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592230282874" />
-    <state width="1872" height="281" key="GridCell.Tab.0.left" timestamp="1592230282874">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1872" height="281" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592230282874" />
-    <state width="1872" height="281" key="GridCell.Tab.0.right" timestamp="1592230282874">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1872" height="281" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592230282874" />
-    <state width="1872" height="346" key="GridCell.Tab.1.bottom" timestamp="1592062205435">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1872" height="346" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1592062205435" />
-    <state width="1872" height="346" key="GridCell.Tab.1.center" timestamp="1592062205435">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1872" height="346" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1592062205435" />
-    <state width="1872" height="346" key="GridCell.Tab.1.left" timestamp="1592062205435">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1872" height="346" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1592062205435" />
-    <state width="1872" height="346" key="GridCell.Tab.1.right" timestamp="1592062205435">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state width="1872" height="346" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1592062205435" />
-    <state x="841" y="167" key="SettingsEditor" timestamp="1592057135179">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="841" y="167" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1592057135179" />
-    <state x="932" y="258" key="Vcs.Push.Dialog.v2" timestamp="1592050088246">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="932" y="258" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1592050088246" />
-    <state x="1044" y="259" key="VcsDiffUtil.ChangesDialog" timestamp="1592051167010">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1044" y="259" key="VcsDiffUtil.ChangesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592051167010" />
-    <state x="646" y="644" key="com.intellij.ide.util.TipDialog" timestamp="1592231909159">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="646" y="644" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592231909159" />
-    <state x="1018" y="316" key="git4idea.merge.GitPullDialog" timestamp="1592050154497">
-      <screen x="0" y="0" width="2560" height="1400" />
-    </state>
-    <state x="1018" y="316" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592050154497" />
+    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592796875500" />
   </component>
 </project>
