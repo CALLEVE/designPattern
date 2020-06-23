@@ -1,3 +1,10 @@
 
-X
-java:S2094	"BRemove this empty class, write its code or make it an "interface".(æ ‚Ö
+J
+java:S1185"(Remove this method to simply inherit it.(°êÿéüÿÿÿÿ8’ÓßŠ®.
+E
+java:S1185"(Remove this method to simply inherit it.(è³É8’ÓßŠ®.
+J
+java:S1185"(Remove this method to simply inherit it.(ú›Šøøÿÿÿÿ8’ÓßŠ®.
+E
+java:S1185"(Remove this method to simply inherit it.(Ò’Š¯8’ÓßŠ®.
+Z	java:S106("9Replace this use of System.out or System.err by a logger.(ÍÀÈøÿÿÿÿ8’ÓßŠ®.

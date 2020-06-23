@@ -2898,9 +2898,358 @@ public class Client {
 
 3）子系统的集合：指模块或者子系统，处理Facade对象指派的任务，他是功能的提供者（或者说是具体功能的实现者）。
 
+外观模式和工厂模式：同样是更具需要调用具体的实现对象去完成相关的任务，但是从实际体验上来说工厂是需要输入和产出的，对于实际的工厂而言，产品是可以实例化的对象，而在外观模式中最终的产出可以是对象也可以是返回为空（功能逻辑）
+
+```java
+package com.company.pattern.facade;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-23 17:02
+ * @description: DVDPlayer  均使用单例对象
+ **/
+public class DVDPlayer {
+
+    private static DVDPlayer instance = new DVDPlayer();
+
+    public static DVDPlayer getInstance(){
+        return  instance;
+    }
+
+    public void on(){
+        System.out.println("dvd on");
+    }
+
+    public void off(){
+        System.out.println("dvd off");
+    }
+
+    public void play(){
+        System.out.println("dvd play");
+    }
+
+    public void pause(){
+        System.out.println("dvd pause");
+    }
+}
+```
 
 
 
+```java
+package com.company.pattern.facade;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-23 19:21
+ * @description:
+ **/
+public class Popcorn {
+
+    private static Popcorn instance = new Popcorn();
+
+
+    public static Popcorn getInstance(){
+        return instance;
+    }
+
+    public void on(){
+        System.out.println("Popcorn on");
+    }
+
+    public void off(){
+        System.out.println("Popcorn off");
+    }
+
+    public void play(){
+        System.out.println("Popcorn play");
+    }
+
+    public void pause(){
+        System.out.println("Popcorn pause");
+    }
+
+}
+```
+
+
+
+```java
+package com.company.pattern.facade;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-23 19:23
+ * @description:
+ **/
+public class Projector {
+
+    private static Projector instance = new Projector();
+
+    public static Projector getInstance(){
+        return instance;
+    }
+
+    public void on(){
+        System.out.println("Projector on");
+    }
+
+    public void off(){
+        System.out.println("Projector off");
+    }
+
+    public void play(){
+        System.out.println("Projector play");
+    }
+
+    public void pause(){
+        System.out.println("Projector pause");
+    }
+
+}
+
+```
+
+
+
+```java
+package com.company.pattern.facade;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-23 19:23
+ * @description:
+ **/
+public class Screen {
+
+    private static Screen instance = new Screen();
+
+    public static Screen getInstance(){
+        return instance;
+    }
+
+    public void on(){
+        System.out.println("Screen on");
+    }
+
+    public void off(){
+        System.out.println("Screen off");
+    }
+
+    public void play(){
+        System.out.println("Screen play");
+    }
+
+    public void pause(){
+        System.out.println("Screen pause");
+    }
+
+}
+```
+
+
+
+```java
+package com.company.pattern.facade;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-23 19:23
+ * @description:
+ **/
+public class Stereo {
+
+    private static Stereo instance = new Stereo();
+
+    public static Stereo getInstance(){
+        return instance;
+    }
+
+    public void on(){
+        System.out.println("Stereo on");
+    }
+
+    public void off(){
+        System.out.println("Stereo off");
+    }
+
+    public void play(){
+        System.out.println("Stereo play");
+    }
+
+    public void pause(){
+        System.out.println("Stereo pause");
+    }
+
+}
+```
+
+
+
+```java
+package com.company.pattern.facade;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-23 19:23
+ * @description:
+ **/
+public class TheaterLight {
+
+    private static TheaterLight instance = new TheaterLight();
+
+    public static TheaterLight getInstance(){
+        return instance;
+    }
+
+    public void on(){
+        System.out.println("TheaterLight on");
+    }
+
+    public void off(){
+        System.out.println("TheaterLight off");
+    }
+
+    public void play(){
+        System.out.println("TheaterLight play");
+    }
+
+    public void pause(){
+        System.out.println("TheaterLight pause");
+    }
+}
+```
+
+
+
+外观模式整合的重点，对于实际使用者而言，只需要关心和使用HomeTheaterFacade即可。
+
+```java
+package com.company.pattern.facade;
+
+import java.nio.file.ProviderNotFoundException;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-23 19:38
+ * @description: 对于外部使用者而言，只需要关心并且只使用该类即可实现需要和制指定的功能
+ *                  所以需要将其他类聚合到
+ **/
+public class HomeTheaterFacade {
+
+    //最常用的方式是聚合
+    //
+
+    private DVDPlayer dvdPlayer;
+    private Popcorn popcorn;
+    private Projector projector;
+    private Screen screen;
+    private Stereo stereo;
+    private TheaterLight theaterLight;
+
+    public HomeTheaterFacade() {
+        super();
+        this.dvdPlayer = DVDPlayer.getInstance();
+        this.popcorn = Popcorn.getInstance();
+        this.projector = Projector.getInstance();
+        this.screen = Screen.getInstance();
+        this.stereo = Stereo.getInstance();
+        this.theaterLight = TheaterLight.getInstance();
+    }
+
+    //然后通过定义具体方法实现
+    public void ready(){
+        dvdPlayer.on();
+        popcorn.on();
+        projector.on();
+    }
+
+    public void play(){
+        dvdPlayer.play();
+    }
+
+    public void pause(){
+        dvdPlayer.pause();
+    }
+
+    public void end(){
+        popcorn.off();
+        projector.off();
+    }
+
+}
+```
+
+
+
+```java
+package com.company.pattern.facade;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-23 20:13
+ * @description:
+ **/
+public class Client {
+    public static void main(String[] args) {
+        HomeTheaterFacade homeTheaterFacade = new HomeTheaterFacade();
+        homeTheaterFacade.ready();
+        homeTheaterFacade.play();
+        homeTheaterFacade.pause();
+        homeTheaterFacade.end();
+    }
+}
+```
+
+```java
+dvd on
+Popcorn on
+Projector on
+dvd play
+dvd pause
+Popcorn off
+Projector off
+```
+
+
+
+
+
+
+
+
+
+### （10）享元模式
+
+
+
+![](设计模式atguigu.assets/享元模式介绍.png)
+
+
+
+![](设计模式atguigu.assets/享元模式原理类图.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+### （11）
 
 
 

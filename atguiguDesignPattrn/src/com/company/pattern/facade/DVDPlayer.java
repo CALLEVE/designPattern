@@ -10,7 +10,7 @@ public class DVDPlayer {
 
     private static DVDPlayer instance = new DVDPlayer();
 
-    public DVDPlayer getInstance(){
+    public static DVDPlayer getInstance(){
         return  instance;
     }
 
