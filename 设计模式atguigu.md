@@ -2627,15 +2627,276 @@ Composite：数值构件，组合叶子和其他树枝组合成一个完整的�
 
 当我们要处理的对象可以生成一颗树形结构，而我们要对树上的***节点***和***叶子***进行操作时，能够提供一致的方式，而不用考录具体是叶子还是节点。
 
-
+（可以简单理解为涉及到以树形结构进行展示或者处理的对象，均是使用了树形模式）
 
 ![](设计模式atguigu.assets/组合实例.png)
 
 
 
+实例如下：
+
+```java
+package com.company.pattern.composite;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-22 16:11
+ * @description: OrganizationComponent
+ **/
+public abstract class OrganizationComponent {
+
+    //名字
+    private String name;
+
+    //说明
+    private String des;
+
+    //为什么不设置为抽象，对于某些叶子没有后续的实现，故不要在继续具体方法的实现
+    protected void add(OrganizationComponent organizationComponent){
+        //默认实现
+        throw new UnsupportedOperationException();
+    }
+
+    protected void remove(OrganizationComponent organizationComponent){
+        //默认实现
+        throw new UnsupportedOperationException();
+    }
+
+    //print 子类均需要实现
+    protected abstract void print();
+
+    public OrganizationComponent(String name, String des) {
+        this.name = name;
+        this.des = des;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getDes() {
+        return des;
+    }
+
+    public void setDes(String des) {
+        this.des = des;
+    }
+}
+```
+
+在实际过程中可将其定义为抽象父类或者顶级接口，该部分具有以下子类的公共特性
+
+```java
+package com.company.pattern.composite;
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-22 16:55
+ * @description: 大学
+ **/
+public class University extends OrganizationComponent {
+
+    List<OrganizationComponent> organizationComponents = new ArrayList<>();
+
+    public University(String name, String des) {
+        super(name, des);
+    }
+
+    @Override
+    protected void add(OrganizationComponent organizationComponent) {
+        organizationComponents.add(organizationComponent);
+    }
+
+    @Override
+    protected void remove(OrganizationComponent organizationComponent) {
+        organizationComponents.remove(organizationComponent);
+    }
+
+    /*
+     * @Author: wangjinpeng
+     * @Date: 2020/6/22 17:03
+     * @Param: []
+     * @return: void
+     * @Description:遍历输出大学所包含的学院
+     */
+    @Override
+    protected void print() {
+        System.out.println("---"+this.getName()+"---");
+        //此处的organizationComponent对象代表的是 学院
+        for (OrganizationComponent organizationComponent : organizationComponents){
+            organizationComponent.print();
+        }
+    }
+}
+```
 
 
 
+```java
+package com.company.pattern.composite;
+
+import java.util.ArrayList;
+import java.util.List;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-22 16:55
+ * @description:
+ **/
+public class College extends OrganizationComponent {
+
+    //如果在父类的体系中已有构造函数
+    //在继承关系下的的子类中必须通过后遭函数实现父类中的构造函数
+    List<OrganizationComponent> organizationComponents = new ArrayList<>();
+
+    public College(String name, String des) {
+        super(name, des);
+    }
+
+    @Override
+    protected void add(OrganizationComponent organizationComponent) {
+        organizationComponents.add(organizationComponent);
+    }
+
+    @Override
+    protected void remove(OrganizationComponent organizationComponent) {
+        organizationComponents.remove(organizationComponent);
+    }
+
+    /*
+     * @Author: wangjinpeng
+     * @Date: 2020/6/22 17:03
+     * @Param: []
+     * @return: void
+     * @Description:遍历输出学院所包含的院系
+     */
+    @Override
+    protected void print() {
+        System.out.println("---"+this.getName()+"---");
+        //此处的organizationComponent对象代表的是 学院
+        for (OrganizationComponent organizationComponent : organizationComponents){
+            organizationComponent.print();
+        }
+    }
+}
+```
+
+
+
+```java
+package com.company.pattern.composite;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-22 16:55
+ * @description: Department是最小的叶子节点
+ **/
+public class Department extends OrganizationComponent {
+
+    public Department(String name, String des) {
+        super(name, des);
+    }
+
+    @Override
+    public String getDes() {
+        return super.getDes();
+    }
+
+    @Override
+    public void setDes(String des) {
+        super.setDes(des);
+    }
+
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
+    @Override
+    public void setName(String name) {
+        super.setName(name);
+    }
+
+    //从组织结构的层次分级来看，Department属于叶子节点，即最低一级节点，后续无需add和remove
+    //打印自己即可
+    @Override
+    protected void print() {
+        System.out.println(this.getName());
+    }
+
+}
+```
+
+
+
+```java
+package com.company.pattern.composite;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-23 13:16
+ * @description: Client
+ **/
+public class Client {
+    public static void main(String[] args) {
+
+        //创建学校
+        OrganizationComponent university = new University("清华大学","中国顶级大学");
+
+        //创建学院
+        OrganizationComponent computerCollege = new College("计算机学院", "计算机学院");
+        OrganizationComponent infoCollege = new College("信息工程学院", "信息工程学院");
+
+        //计算机学院学院下的专业（系）
+        computerCollege.add(new Department("软件工程", "软件工程不错"));
+        computerCollege.add(new Department("网络工程", "网络工程不错"));
+        computerCollege.add(new Department("计算机科学与技术", "计算机科学与技术不错"));
+
+        //计算机学院学院下的专业（系）
+        infoCollege.add(new Department("信息工程", "信息工程不好学"));
+        infoCollege.add(new Department("通信工程", "通信工程不错"));
+
+        //最后将学院加入到学校中
+        university.add(computerCollege);
+        university.add(infoCollege);
+
+        //依据需要打印输出，某一节点向下的所有内容
+        //university.print();
+
+        //打印学院
+        computerCollege.print();
+    }
+}
+```
+
+
+
+![](设计模式atguigu.assets/组合模式的注意事项.png)
+
+适用于有很明显结构层次的组织机构，各组织之间存在明显的上下级或者包含关系，例如一座大学的组织机构（大学-->学院--> 专业（系））
+
+
+
+### （9）外观模式
+
+原理类图的说明：
+
+1）外观类（Facade）：为调用端提供统一的调用接口，外观类知道哪些子系统负责处理请求，从而将调用端的请求代理给适当子系统对象。
+
+2）调用者（Client）：外观接口的调用者。
+
+3）子系统的集合：指模块或者子系统，处理Facade对象指派的任务，他是功能的提供者（或者说是具体功能的实现者）。
 
 
 
