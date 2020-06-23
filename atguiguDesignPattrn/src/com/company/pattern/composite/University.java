@@ -1,5 +1,6 @@
 package com.company.pattern.composite;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,21 +14,18 @@ public class University extends OrganizationComponent {
 
     List<OrganizationComponent> organizationComponents = new ArrayList<>();
 
-    public University(String name, String des, ) {
+    public University(String name, String des) {
         super(name, des);
     }
 
-    //
-
-
     @Override
     protected void add(OrganizationComponent organizationComponent) {
-        super.add(organizationComponent);
+        organizationComponents.add(organizationComponent);
     }
 
     @Override
     protected void remove(OrganizationComponent organizationComponent) {
-        super.remove(organizationComponent);
+        organizationComponents.remove(organizationComponent);
     }
 
     /*
@@ -35,10 +33,15 @@ public class University extends OrganizationComponent {
      * @Date: 2020/6/22 17:03
      * @Param: []
      * @return: void
-     * @Description:输出学院所包含的院系
+     * @Description:遍历输出大学所包含的学院
      */
     @Override
     protected void print() {
+        System.out.println("---"+this.getName()+"---");
+        //此处的organizationComponent对象代表的是 学院
+        for (OrganizationComponent organizationComponent : organizationComponents){
+            organizationComponent.print();
+        }
 
     }
 }
