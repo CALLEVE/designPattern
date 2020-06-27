@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8cdca4b-ec13-41eb-a489-0e9b0b9b121d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/facade/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/facade/HomeTheaterFacade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/facade/Popcorn.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/facade/Projector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/facade/Screen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/facade/Stereo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/company/pattern/facade/TheaterLight.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/pattern/facade/DVDPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/pattern/facade/DVDPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../设计模式atguigu.md" beforeDir="false" afterPath="$PROJECT_DIR$/../设计模式atguigu.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,6 +98,9 @@
       <workItem from="1592835213774" duration="136000" />
       <workItem from="1592876789332" duration="13582000" />
       <workItem from="1592918534910" duration="1164000" />
+      <workItem from="1593008575476" duration="26000" />
+      <workItem from="1593008814048" duration="164000" />
+      <workItem from="1593042936582" duration="335000" />
     </task>
     <servers />
   </component>
@@ -170,11 +163,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="258" y="153" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592877763908" />
-    <state x="677" y="432" key="com.intellij.ide.util.TipDialog" timestamp="1592876789041">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="902" y="581" key="com.intellij.ide.util.TipDialog" timestamp="1593042937633">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="677" y="432" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1592876789041" />
-    <state x="902" y="581" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1592831302951" />
+    <state x="902" y="581" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1593042937633" />
     <state x="627" y="219" key="extract.method.dialog" timestamp="1592890713506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
