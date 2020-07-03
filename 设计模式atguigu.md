@@ -3251,7 +3251,7 @@ Projector off
 
 ![](设计模式atguigu.assets/享元模式的内部和外部状态.png)
 
-简而言之，就是对外属性和对内属性，对内属性相对来说是对象自身的较为稳定的属性，对外属性就是属于对外展示的属性或者特点（在体现上表现为较易发生变动的对外特点）。
+简而言之，就是对外属性和对内属性，对内属性相对来说是对象自身的较为稳定的属性（颜色，重量，大小），对外属性就是属于对外展示的属性或者特点（在体现上表现为较易发生变动的对外特点，PS：方向，位置等）。
 
 
 
@@ -3259,9 +3259,24 @@ Projector off
 
 
 
+```html
+package com.company.pattern.flyweight;
 
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-24 15:32
+ * @description: 定义为抽象父类
+ * 从某种程度上看，抽象父类中定义抽象方法，与接口整体的实现效果是一样的
+ **/
+public abstract class WebSite {
 
+    public abstract void use(User user);
 
+}
+```
+
+享元模式的核心抽象类
 
 
 

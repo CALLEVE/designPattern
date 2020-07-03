@@ -12,7 +12,7 @@ public class ConcreteWebSite extends WebSite {
 
     @Override
     public void use(User user) {
-        System.out.println("网站的发布形式"+type+"网站使用者"+user.getName());
+        System.out.println("网站的发布形式"+type+";网站使用者"+user.getName());
     }
 
 }
