@@ -25,3 +25,9 @@ Z
 0src/com/company/pattern/facade/TheaterLight.java,8\0\805137458657e7f16231ff8b5c38b27c82eed344
 ]
 -src/com/company/pattern/composite/Client.java,0\9\091224ff9b064e325cc9e9ff071a96ac39b81e3c
+e
+5src/com/company/pattern/flyweight/WebSiteFactory.java,7\1\7148779fe7b1083532b1bb55f7c8ea4638a0def2
+f
+6src/com/company/pattern/flyweight/ConcreteWebSite.java,2\4\2441dec682d8a430d58ebd9be0860e584cdc5b35
+[
++src/com/company/pattern/flyweight/User.java,5\d\5d1ebf99b750e447ce3fb3a7bf70465642fe0558

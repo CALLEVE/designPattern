@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e8cdca4b-ec13-41eb-a489-0e9b0b9b121d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sonarlint/issuestore/index.pb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../设计模式atguigu.md" beforeDir="false" afterPath="$PROJECT_DIR$/../设计模式atguigu.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,6 +120,8 @@
       <workItem from="1593304135108" duration="26000" />
       <workItem from="1593777366174" duration="871000" />
       <workItem from="1593781734623" duration="2159000" />
+      <workItem from="1593869140522" duration="746000" />
+      <workItem from="1593906254628" duration="191000" />
     </task>
     <servers />
   </component>
@@ -181,11 +185,11 @@
     </state>
     <state x="258" y="153" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1592877763908" />
     <state x="344" y="206" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1593782056491" />
-    <state x="902" y="581" key="com.intellij.ide.util.TipDialog" timestamp="1593781735563">
+    <state x="902" y="581" key="com.intellij.ide.util.TipDialog" timestamp="1593906254655">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="677" y="432" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1593777366643" />
-    <state x="902" y="581" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1593781735563" />
+    <state x="902" y="581" key="com.intellij.ide.util.TipDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1593906254655" />
     <state x="627" y="219" key="extract.method.dialog" timestamp="1592890713506">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
