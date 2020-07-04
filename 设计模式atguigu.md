@@ -892,7 +892,7 @@ public class OrderPizza {
 }
 ```
 
-可以简单理解OrderPizza为一个中间的操作，通过该类的指定行为来进一步点餐，通过用户的输入来指定具体的产品，进而通过产品工厂来生产产品。
+可以简单理解OrderPizza为一个中间的操作，通过该类的指定行为来进一步点餐，通过用户的输入来指定具体的产品，进而通过产品工厂来生产产品，可以理解为将pizza的生产过程转移到了工厂中进行实现，调用者本身无需再继续关心pizza的生产过程中，只需要得到想要的产品即可+-。
 
 
 
@@ -3261,7 +3261,11 @@ Projector off
 
 享元模式的核心抽象类
 
+<<<<<<< HEAD
 ```html
+=======
+```java
+>>>>>>> 3ecb9aaea004538b4a27c2487fbaba64196214d3
 package com.company.pattern.flyweight;
 
 /**
@@ -3278,7 +3282,11 @@ public abstract class WebSite {
 }
 ```
 
+<<<<<<< HEAD
 享元模式的具体实现类：重点在于整合外部属性和内部属性
+=======
+
+>>>>>>> 3ecb9aaea004538b4a27c2487fbaba64196214d3
 
 ```java
 package com.company.pattern.flyweight;
@@ -3293,6 +3301,10 @@ public class ConcreteWebSite extends WebSite {
         this.type = type;
     }
 
+<<<<<<< HEAD
+=======
+    //User则是外部状态的体现
+>>>>>>> 3ecb9aaea004538b4a27c2487fbaba64196214d3
     @Override
     public void use(User user) {
         System.out.println("网站的发布形式"+type+";网站使用者"+user.getName());
@@ -3303,7 +3315,55 @@ public class ConcreteWebSite extends WebSite {
 
 
 
+<<<<<<< HEAD
 将其称之为“享元工厂”，整合具体的对象（元），享元的具体体现在于下方的实现代码中，如果已有该对象，则返回该对象，如果没有
+=======
+```java
+package com.company.pattern.flyweight;
+
+import java.util.HashMap;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-24 15:51
+ * @description:
+ **/
+public class WebSiteFactory {
+
+    //构建一个集合，充当池的作用
+    private HashMap<String,ConcreteWebSite> pool = new HashMap<>();
+
+
+    //以下提供两个方法
+    //根据网站的类型，返回一个网站，如果没有就创建一个网站，并放入到池中，并返回
+    public WebSite getWebSite(String type){
+        if(!pool.containsKey(type)){
+            pool.put(type, new ConcreteWebSite(type));
+        }
+        return (WebSite) pool.get(type);
+    }
+
+    //
+    public int getCount(){
+        return pool.size();
+    }
+}
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 3ecb9aaea004538b4a27c2487fbaba64196214d3
 
 ```java
 package com.company.pattern.flyweight;
@@ -3345,6 +3405,7 @@ public class WebSiteFactory {
 
 
 
+![](设计模式atguigu.assets/享元模式注意事项和细节.png)
 
 
 
