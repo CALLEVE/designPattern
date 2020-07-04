@@ -892,7 +892,7 @@ public class OrderPizza {
 }
 ```
 
-可以简单理解OrderPizza为一个中间的操作，通过该类的指定行为来进一步点餐，通过用户的输入来指定具体的产品，进而通过产品工厂来生产产品。
+可以简单理解OrderPizza为一个中间的操作，通过该类的指定行为来进一步点餐，通过用户的输入来指定具体的产品，进而通过产品工厂来生产产品，可以理解为将pizza的生产过程转移到了工厂中进行实现，调用者本身无需再继续关心pizza的生产过程中，只需要得到想要的产品即可+-。
 
 
 
@@ -3259,7 +3259,9 @@ Projector off
 
 
 
-```html
+享元模式的核心抽象类
+
+```java
 package com.company.pattern.flyweight;
 
 /**
@@ -3276,7 +3278,64 @@ public abstract class WebSite {
 }
 ```
 
-享元模式的核心抽象类
+
+
+```java
+package com.company.pattern.flyweight;
+
+public class ConcreteWebSite extends WebSite {
+
+    //共享的部分，内部的状态
+    private String type = "";
+
+    //构造器
+    public ConcreteWebSite(String type) {
+        this.type = type;
+    }
+
+    //User则是外部状态的体现
+    @Override
+    public void use(User user) {
+        System.out.println("网站的发布形式"+type+";网站使用者"+user.getName());
+    }
+
+}
+```
+
+
+
+```java
+package com.company.pattern.flyweight;
+
+import java.util.HashMap;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-24 15:51
+ * @description:
+ **/
+public class WebSiteFactory {
+
+    //构建一个集合，充当池的作用
+    private HashMap<String,ConcreteWebSite> pool = new HashMap<>();
+
+
+    //以下提供两个方法
+    //根据网站的类型，返回一个网站，如果没有就创建一个网站，并放入到池中，并返回
+    public WebSite getWebSite(String type){
+        if(!pool.containsKey(type)){
+            pool.put(type, new ConcreteWebSite(type));
+        }
+        return (WebSite) pool.get(type);
+    }
+
+    //
+    public int getCount(){
+        return pool.size();
+    }
+}
+```
 
 
 
@@ -3285,6 +3344,20 @@ public abstract class WebSite {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+![](设计模式atguigu.assets/享元模式注意事项和细节.png)
 
 
 
