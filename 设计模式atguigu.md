@@ -1,5 +1,3 @@
-# 设计模式
-
 ## 一、设计模式常用原则
 
 1.单一职责原则
@@ -3261,11 +3259,8 @@ Projector off
 
 享元模式的核心抽象类
 
-<<<<<<< HEAD
 ```html
-=======
-```java
->>>>>>> 3ecb9aaea004538b4a27c2487fbaba64196214d3
+
 package com.company.pattern.flyweight;
 
 /**
@@ -3282,11 +3277,9 @@ public abstract class WebSite {
 }
 ```
 
-<<<<<<< HEAD
-享元模式的具体实现类：重点在于整合外部属性和内部属性
-=======
 
->>>>>>> 3ecb9aaea004538b4a27c2487fbaba64196214d3
+
+享元模式的具体实现类：重点在于整合外部属性和内部属性
 
 ```java
 package com.company.pattern.flyweight;
@@ -3301,10 +3294,9 @@ public class ConcreteWebSite extends WebSite {
         this.type = type;
     }
 
-<<<<<<< HEAD
-=======
+
     //User则是外部状态的体现
->>>>>>> 3ecb9aaea004538b4a27c2487fbaba64196214d3
+
     @Override
     public void use(User user) {
         System.out.println("网站的发布形式"+type+";网站使用者"+user.getName());
@@ -3313,11 +3305,38 @@ public class ConcreteWebSite extends WebSite {
 }
 ```
 
+```java
+package com.company.pattern.flyweight;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-24 15:31
+ * @description:
+ **/
+public class User {
+
+    public String name;
+
+    public User(String name) {
+        super();
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+```
 
 
-<<<<<<< HEAD
-将其称之为“享元工厂”，整合具体的对象（元），享元的具体体现在于下方的实现代码中，如果已有该对象，则返回该对象，如果没有
-=======
+
+将其称之为“享元工厂”，整合具体的对象（元），享元的具体体现在于下方的实现代码中，如果已有该对象，则返回该对象，如果没有则构建新的对象。
+
 ```java
 package com.company.pattern.flyweight;
 
@@ -3355,16 +3374,6 @@ public class WebSiteFactory {
 
 
 
-
-
-
-
-
-
-
-
->>>>>>> 3ecb9aaea004538b4a27c2487fbaba64196214d3
-
 ```java
 package com.company.pattern.flyweight;
 
@@ -3400,7 +3409,54 @@ public class WebSiteFactory {
 }
 ```
 
+```java
+package com.company.pattern.flyweight;
 
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-06-24 16:05
+ * @description:
+ **/
+public class Client {
+    public static void main(String[] args) {
+        //创建一个工厂类
+        WebSiteFactory webSiteFactory = new WebSiteFactory();
+
+        //提供一个明确的网站类型
+        WebSite site = webSiteFactory.getWebSite("新闻");
+        site.use(new User("tom"));
+        
+    }
+}
+```
+
+```java
+网站的发布形式新闻;网站使用者tom
+```
+
+源码分析：
+
+```java
+//   相当于构建出一个池的概念  -128~127
+//    public static Integer valueOf(int i) {
+//        if (i >= IntegerCache.low && i <= IntegerCache.high)
+//            return IntegerCache.cache[i + (-IntegerCache.low)];
+//        return new Integer(i);
+//    }
+
+//1.在valueof 方法中，先判断值是否在IntegerCache中，如果不在，就创建新的Integer
+//2.在valueof方法，使用到享元模式
+
+
+Integer integer = Integer.valueOf(127);
+Integer integer1 = new Integer(127);
+Integer integer2 = Integer.valueOf(127);
+Integer integer3 = new Integer(127);
+System.out.println(integer==integer1);
+System.out.println(integer==integer2);
+System.out.println(integer1==integer3);
+```
 
 
 
@@ -3409,7 +3465,381 @@ public class WebSiteFactory {
 
 
 
-### （11）
+### （11）代理模式
+
+![](设计模式atguigu.assets/代理模式介绍.png)
+
+
+
+
+
+静态代理
+
+![](设计模式atguigu.assets/静态代理.png)
+
+
+
+![](设计模式atguigu.assets/静态代理类图.png)
+
+
+
+顶级接口的定义
+
+```java
+package com.company.pattern.proxy.staticproxy;
+
+//接口
+public interface ITeacherDao {
+    void teach();//授课的方法
+}
+```
+
+被代理对象
+
+```java
+package com.company.pattern.proxy.staticproxy;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-07-05 13:25
+ * @description:
+ **/
+public class TeacherDao implements ITeacherDao {
+    @Override
+    public void teach() {
+        System.out.println("老师授课中");
+    }
+}
+```
+
+代理对象
+
+```java
+package com.company.pattern.proxy.staticproxy;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-07-05 13:28
+ * @description:
+ **/
+public class TeacherDaoProxy implements ITeacherDao {
+
+    //引入实现了相同接口的
+    private ITeacherDao target;
+
+    //相同的模式，通过构造器注入
+
+    public TeacherDaoProxy(ITeacherDao target) {
+        this.target = target;
+    }
+
+    @Override
+    public void teach() {
+        System.out.println("开始代理 完成某些操作");
+        target.teach();
+        System.out.println("代理结束");
+    }
+}
+
+```
+
+实际调用
+
+```java
+package com.company.pattern.proxy.staticproxy;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-07-05 14:27
+ * @description:
+ **/
+public class Client {
+    public static void main(String[] args) {
+        //创建目标对象
+        TeacherDao teacherDao = new TeacherDao();
+        //创建代理对象，同时将被代理对象传递
+        TeacherDaoProxy daoProxy = new TeacherDaoProxy(teacherDao);
+        daoProxy.teach();
+
+    }
+}
+```
+
+```java
+开始代理 完成某些操作
+老师授课中
+代理结束
+```
+
+
+
+![](设计模式atguigu.assets/静态代理优缺点.png)
+
+
+
+动态代理
+
+![](设计模式atguigu.assets/动态代理介绍.png)
+
+
+
+![](设计模式atguigu.assets/动态代理类图.png)
+
+核心接口
+
+```java
+package com.company.pattern.proxy.dynamicproxy;
+
+public interface ITeacherDao {
+    void teach();
+}
+```
+
+
+
+被代理对象：必须实现上述接口
+
+```java
+package com.company.pattern.proxy.dynamicproxy;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-07-05 16:15
+ * @description:
+ **/
+public class TeacherDao implements ITeacherDao {
+    @Override
+    public void teach() {
+        System.out.println("老师正在授课中");
+    }
+}
+```
+
+
+
+代理工厂需要完成具体的实现：核心（newProxyInstance）
+
+```java
+package com.company.pattern.proxy.dynamicproxy;
+
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Method;
+import java.lang.reflect.Proxy;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-07-05 16:20
+ * @description:
+ **/
+public class ProxyFactory {
+
+    private Object target;
+
+    //通过构造器进行注入
+    public ProxyFactory(Object target) {
+        this.target = target;
+    }
+
+    //根据目标对象生成代理对象
+    public Object getInstance(){
+        //newProxyInstance(ClassLoader loader,Class<?>[] interfaces ,InvocationHandler h)
+        // 1.ClassLoader loader,指定当前目标对象使用的类加载器，获取加载器的方法固定
+        // 2.Class<?>[] interfaces,目标对象实现的接口类型，使用泛型确认类型
+        // 3.InvocationHandler h,事件处理，执行目标对象的方法时，会触发事件处理方法，
+        // 会把当前执行的目标对象方法作为参数传入
+        // 核心
+        Object instance = Proxy.newProxyInstance(target.getClass().getClassLoader(), target.getClass().getInterfaces(), new InvocationHandler() {
+            //动态获取方法,其实本质目的就是为了绑定
+            @Override
+            public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
+                System.out.println("jdk代理开始");
+                Object invoke = method.invoke(target, args);
+                System.out.println("代理成功");
+                return invoke;
+            }
+        });
+        return instance;
+    }
+}
+```
+
+
+
+具体实现：
+
+```java
+package com.company.pattern.proxy.dynamicproxy;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-07-05 17:01
+ * @description:
+ **/
+public class Client {
+    public static void main(String[] args) {
+
+        //创建目标对象，只需要获取目标对象的属性作为参数传入
+        TeacherDao teacherDao = new TeacherDao();
+
+        //通过代理工厂获取代理对象
+        ITeacherDao proxyFactory = (ITeacherDao)new ProxyFactory(teacherDao).getInstance();
+        //System.out.println("proxyFactory:"+proxyFactory);
+        proxyFactory.teach();
+//        System.out.println("Class:"+proxyFactory.getClass());
+    }
+}
+
+```
+
+
+
+```java
+jdk代理开始
+老师正在授课中
+代理成功
+```
+
+在Object invoke = method.invoke(target, args);执行成功的时候，对应对象的方法已经执行成功。
+
+
+
+![](设计模式atguigu.assets/Cglib代理.png)
+
+
+
+![](设计模式atguigu.assets/cglib代理步骤.png)
+
+
+
+![](设计模式atguigu.assets/cglib类图.png)
+
+无需定义接口和实现接口
+
+需要引入cglib包
+
+```java
+package com.company.pattern.proxy.cglib;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-07-05 19:59
+ * @description:
+ **/
+public class TeacherDao {
+
+    public void teach(){
+        System.out.println("老师授课中  cglib 不需要借口");
+    }
+
+}
+```
+
+cglib代理的核心实现
+
+```java
+package com.company.pattern.proxy.cglib;
+
+import net.sf.cglib.proxy.Enhancer;
+import net.sf.cglib.proxy.MethodInterceptor;
+import net.sf.cglib.proxy.MethodProxy;
+
+import java.lang.reflect.Method;
+
+/**
+ * @program: atguiguDesignPattrn
+ * @author: wangjinpeng
+ * @create: 2020-07-05 20:04
+ * @description:
+ **/
+public class ProxyFactory implements MethodInterceptor {
+
+
+    //维护一个目标对象
+    private Object target;
+
+    public ProxyFactory(Object target) {
+        this.target = target;
+    }
+
+    //返回一个代理对象，是
+    public Object getProxyInstance(){
+        //1.创建一个工具类
+        Enhancer enhancer = new Enhancer();
+        //2.设置父类
+        enhancer.setSuperclass(target.getClass());
+        //3.回调函数
+        enhancer.setCallback(this);
+        //4.创建子类对象，即代理对象
+        return enhancer.create();
+    }
+
+    //重写intercept 方法，回调用目标对象的方法
+    @Override
+    public Object intercept(Object o, Method method, Object[] objects, MethodProxy methodProxy) throws Throwable {
+        System.out.println("cglib 代理模式");
+        Object invoke = method.invoke(target, objects);
+        System.out.println("chlib 代理提交");
+        return invoke;
+    }
+}
+```
+
+
+
+```java
+cglib 代理模式
+老师授课中  cglib 不需要借口
+chlib 代理提交
+```
+
+
+
+### （12）模板方法
+
+![](设计模式atguigu.assets/模板方法介绍.png)
+
+
+
+![](设计模式atguigu.assets/模板方法类图.png) 
+
+
+
+
+
+
+
+
+
+
+
+### （13）
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### （14）
+
+
 
 
 

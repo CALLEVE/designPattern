@@ -14,7 +14,7 @@ public class Client {
         //提供一个明确的网站类型
         WebSite site = webSiteFactory.getWebSite("新闻");
         site.use(new User("tom"));
-        
+
     }
 }
 

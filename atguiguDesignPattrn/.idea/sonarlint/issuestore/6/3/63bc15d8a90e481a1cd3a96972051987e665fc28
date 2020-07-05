@@ -1,0 +1,23 @@
+
+7
+java:S2129"!Remove this "Integer" constructor(ðØ–‡
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ü•Ë“ûÿÿÿÿ
+T
+java:S4973"9Use the "equals" method if value comparison was intended.(»¼Þ¼ýÿÿÿÿ
+E
+java:S1874"/Remove this use of "Integer"; it is deprecated.(ðØ–‡
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(èú¨Óþÿÿÿÿ
+T
+java:S4973"9Use the "equals" method if value comparison was intended.(ü•Ë“ûÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(Ö‹â¹ûÿÿÿÿ
+T
+java:S4973"9Use the "equals" method if value comparison was intended.(²Çüÿÿÿÿ
+d
+java:S1128"IRemove this unused import 'com.sun.org.apache.bcel.internal.generic.NEW'.(èú¨Óþÿÿÿÿ
+<
+java:S2129"!Remove this "Integer" constructor(ÈÂ¯ßûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(»¼Þ¼ýÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(²Çüÿÿÿÿ
+J
+java:S1874"/Remove this use of "Integer"; it is deprecated.(ÈÂ¯ßûÿÿÿÿ
