@@ -491,6 +491,7 @@ public class SingletonTest06 {
 
     private static volatile SingletonTest06 INSTANCE;
 
+    // 双重检测 是体现在 两次 INSTANCE ==null 的判断上
     public static SingletonTest06 getInstance(){
         if(INSTANCE ==null){
             synchronized (SingletonTest06.class){
