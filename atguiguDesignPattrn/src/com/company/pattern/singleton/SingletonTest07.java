@@ -18,5 +18,17 @@ public class SingletonTest07 {
         return SingletonInnerClass.INSTANCE;
     }
 
+    public static void main(String[] args) {
+        SingletonTest07 instance1 = SingletonInnerClass.INSTANCE;
+
+        SingletonTest07 instance2 = SingletonInnerClass.INSTANCE;
+
+        if(instance1==instance2){
+            System.out.println("yes");
+        }else{
+            System.out.println("no");
+        }
+
+    }
 
 }
