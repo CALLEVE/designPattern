@@ -275,7 +275,7 @@
 							"font": "Arial;13;0",
 							"left": 424,
 							"top": 104,
-							"width": 233,
+							"width": 297,
 							"height": 193,
 							"text": "template模板方法\n规定里算法大致的流程\ntemplate(){\n operation2()\noperation2()\noperation3()\n}\n\noperation2,3,4可以使抽象方法也可以是实例方法"
 						},
@@ -823,7 +823,7 @@
 								"$ref": "AAAAAAFzHylv4TMqiuw="
 							},
 							"lineStyle": 1,
-							"points": "477:297;438:359"
+							"points": "495:297;445:359"
 						}
 					]
 				},
