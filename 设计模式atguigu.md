@@ -345,7 +345,11 @@ class Singleton02 {
 true
 instance:460141958
 instance1:460141958
+    	
+   
 ```
+
+
 
 ![](设计模式atguigu.assets/饿汉式(静态代码块).jpg)
 
@@ -543,7 +547,7 @@ public class SingletonTest07 {
 
 
 
-***枚举***
+##### ***枚举***
 
 ```java
 package com.company.pattern.singleton;
